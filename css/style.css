@@ -1,0 +1,221 @@
+:root {
+  --color-black: #454545;
+}
+
+.help__list {
+  list-style: none;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.cotainer__fluid {
+  width: 1440px;
+  padding-left: 15px;
+}
+
+.header {
+  margin-right: 0 auto;
+  padding: 15px 0;
+  background-color: var(--color-black);
+}
+
+.logo__image {
+  width: 40%;
+}
+
+.help {
+  margin-top: 140px;
+}
+
+.help__info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.help__info-wrraper {
+  background-image: url("../img/bg_help_team.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 1173px;
+  padding: 0 63px;
+  position: relative;
+  z-index: -2;
+  color: #fff;
+  
+}
+
+
+
+.help__info-title {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  display: block;
+  margin-top: 398px;
+}
+
+.help__info-text {
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+.circle-border {
+  position: relative;
+  top: 0;
+  left: 625px;
+}
+
+.--sales-cloud,
+.--marketing-cloud,
+.--experience_cloud,
+.--einstein,
+.--service_cloud {
+  width: 580px;
+  height: 112px;
+  position: relative;
+  top: 0;
+  left: 150px;
+}
+
+.--marketing-cloud {
+  left: -20px;
+}
+
+.--experience_cloud {
+  left: -60px;
+}
+
+.--einstein {
+  left: -40px;
+}
+
+.--service_cloud {
+  left: 20px;
+}
+
+.--sales-cloud::after,
+.--marketing-cloud::after,
+.--experience_cloud::after,
+.--einstein::after,
+.--service_cloud::after {
+  content: url(../svg/sales_cloud.svg);
+  width: 94px;
+  height: 102px;
+  position: absolute;
+  top: 0;
+  right: 40px;
+}
+
+.--marketing-cloud::after {
+  content: url(../svg/marketing_cloud.svg);
+}
+
+.--experience_cloud::after {
+  content: url(../svg/Experience_cloud.svg);
+  top: 30px;
+}
+
+.--einstein::after {
+  content: url(../svg/Einstein.svg);
+  top: 30px;
+}
+
+.--service_cloud::after {
+  content: url(../svg/Service_Cloud.svg);
+}
+
+#track {
+  position: absolute;
+  top: 250px;
+  left: 1200px;
+}
+/*
+.--list-track {
+  offset-path: path(
+    "M1266.5 653.5C1266.5 1014.16 983.082 1306.5 633.5 1306.5C283.918 1306.5 0.5 1014.16 0.5 653.5C0.5 292.843 283.918 0.5 633.5 0.5C983.082 0.5 1266.5 292.843 1266.5 653.5Z"
+  );
+  animation: move 30s;
+}
+
+@keyframes move {
+  100% {
+    offset-distance: 100%;
+  }
+
+  0% {
+    offset-distance: 0%;
+  }
+}
+
+*/
+
+.--list-track {
+  position: absolute;
+  top: 290px;
+  left: 555px;
+  z-index: 2;
+  animation: list-move 10s;
+  
+}
+
+@keyframes list-move {
+    0% {
+       left: 1900px; 
+    }
+}
+
+.help__list-item {
+  margin-top: 100px;
+  width: 500px;
+  padding: 0 100px;
+}
+
+.help__list-title {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.help__list-text {
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+
+
+/*swiper*/
+
+.swiper {
+    margin: 0 auto;
+    width: 375px;
+    height: 900px;
+}
+
+.swiper-button-prev {
+    transform: rotate(-90deg);
+    left: 339px;
+    top: 500px;
+    position: absolute;
+}
+
+.swiper-button-next {
+    transform: rotate(-90deg);
+}
+
+.swiper-slide {
+    background-image: url(../img/Group_274.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x:200px ;
+    background-position-y:center ;   
+    width: 375px;
+    height: 10px;
+}

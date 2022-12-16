@@ -1,0 +1,37 @@
+@media (max-width: 1400px) {
+    .swiper {
+        display: none;
+    }
+}
+@media  (max-width: 500px) {
+    .swiper {
+        display: block;
+    }
+    .help__info {
+        display: none;
+    }
+
+    .help__list-item {
+        width: 218px;
+    }
+
+    .help__list-title {
+        font-size: 20px;
+    }
+
+    .help__list-text {
+        font-size: 18px;
+        
+    }
+
+    .--sales-cloud {
+        left: -80px;
+        top: 35%;
+    }
+    
+    .--sales-cloud::after {
+        left: 290px;
+        width: 53px;
+        height: 57px;
+    }
+}
